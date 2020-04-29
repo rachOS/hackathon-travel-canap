@@ -24,5 +24,3 @@ export default function TreapContainer(){
         </div>
     )
 }
-
-export default TreapContainer;
