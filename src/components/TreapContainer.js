@@ -16,7 +16,7 @@ export default function TreapContainer(){
 
     return(
         <div>
-            {/*<Destination />*/}
+            <Destination />
             <ContainerMeal 
                 mealRandom={mealRandom}
                 changeMeal={changeMeal}
@@ -24,3 +24,5 @@ export default function TreapContainer(){
         </div>
     )
 }
+
+export default TreapContainer;
