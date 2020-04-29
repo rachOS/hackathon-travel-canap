@@ -1,13 +1,13 @@
 .footer{
     background-color: #009432;
-    height: 20vh;
+    height: 50px;
     width: 100%;
     /* display: flex; */
     /* justify-content: center; */
     /* align-items: center; */
     color: #d8eedf;
-    position: fixed;
-    bottom: 0px;
+    position: relative;
+    bottom: 50px;
 }
 
 .credit{
@@ -16,7 +16,7 @@
     display: inline-block;
     position: relative;
     left: 79%;
-    top: 124px;
+    top: 28px;
 }
 
 .link{
