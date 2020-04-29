@@ -1,10 +1,13 @@
 import React from 'react';
 import Destination from './Destination';
 
-export default function TreapContainer(){
+
+const TreapContainer = () => {
     return(
         <div>
             <Destination />
         </div>
     )
 }
+
+export default TreapContainer;
