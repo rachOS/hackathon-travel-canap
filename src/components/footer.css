@@ -7,16 +7,17 @@
     /* align-items: center; */
     color: #d8eedf;
     position: relative;
-    bottom: 50px;
+    bottom: 0px;
 }
 
 .credit{
     font-size: 8px;
     text-align: right;
-    display: inline-block;
+    display: flex;
     position: relative;
-    left: 79%;
     top: 28px;
+    justify-content: flex-end;
+    margin-right: 5px;
 }
 
 .link{
