@@ -1,0 +1,27 @@
+.footer{
+    background-color: #009432;
+    height: 20vh;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d8eedf;
+}
+
+.credit{
+    font-size: 8px;
+    text-align: right;
+    justify-self: right;
+}
+
+.link{
+    color: #d8eedf;
+    
+}
+.link:link{
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 1.2em;
+    background-color: rgb(51, 116, 124);
+    padding: 0 5px;
+}

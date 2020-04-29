@@ -1,0 +1,13 @@
+.header{
+    background-color: #009432;
+    height: 20vh;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 128px;
+    height: auto;
+}
