@@ -1,11 +1,18 @@
 import React from 'react';
+// import {Switch, Route} from 'react-router-dom';
 import './App.css';
-import Test from './components/Test'
+import TreapContainer from './components/TreapContainer';
+import Header from './components/Header';
+import Footer from './components/Footer';
+
 function App() {
   return (
     <>
-      <h1>TEST</h1>
-      <Test/>
+      {/* <Switch> */}
+        <Header />
+        <TreapContainer />
+        <Footer />
+      {/* </Switch> */}
     </>
   );
 }
