@@ -1,6 +1,8 @@
 .Destination{
     width: 100%;
     margin-right: 30px;
+    height: 72vh;
+    min-height: 100%;
 }
 
 .Destination h1{

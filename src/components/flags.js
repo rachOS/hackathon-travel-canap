@@ -6,15 +6,19 @@ import Japanese from "../img/japan.png";
 const flags = [
     {
         img: French,
+        name: 'French'
     },
     {
-        img: Spanish
+        img: Spanish,
+        name: 'Spanish'
     },
     {
-        img: English
+        img: English,
+        name:'British'
     },
     {
-        img: Japanese
+        img: Japanese,
+        name: "Japanese"
     },
 ]
 

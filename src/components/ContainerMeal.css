@@ -26,6 +26,20 @@
     margin: 1rem;
 }
 
+.meal button {
+    border: none;
+    background-color: #009432;
+    border-radius: 30px;
+    padding:0.5rem;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width:12vw;
+    cursor: pointer;
+    margin: 1rem;
+}
+
 .title-random img {
     width: 1rem;
 }
