@@ -25,14 +25,13 @@ const ContainerMeal = (props) => {
         .then(res => setMeals(res.data.meals[Math.floor(Math.random()* res.data.meals.length)]))
     };
 
-<<<<<<< HEAD
     const handleRecipe = (recipes) => {
         props.history.push(`/meal/flag/${recipes}`)
-=======
+    }
+
     const handleClick = (nameflag) => {
         props.history.push(`/meal/${nameflag}`);
         changeMeal();
->>>>>>> f7b363151f8ea1906cb20a486e05122b4dd55a6c
     }
 
     return (
@@ -47,12 +46,6 @@ const ContainerMeal = (props) => {
                     )}
                 </div>
             </div>
-<<<<<<< HEAD
-            <div className='meal'>
-                <h4>{mealRandom.strMeal}</h4>
-                <img className='img-meal' src={mealRandom.strMealThumb} alt={mealRandom.strMeal} />
-                <button onClick={() =>handleRecipe(mealRandom.idMeal)}>Make me love it</button>
-=======
             <div className="ContainerRecipe">
                 <div className='title-random'>
                     <h1>A bite to discover</h1>
@@ -69,9 +62,8 @@ const ContainerMeal = (props) => {
                         <h4>{mealRandom.strMeal}</h4>
                         <img className='img-meal' src={mealRandom.strMealThumb} alt={mealRandom.strMeal} />
                     </div>
-                    <button>Make me love it</button>
+                    <button onClick={() =>handleRecipe(mealRandom.idMeal)}>Make me love it</button>
                 </div>
->>>>>>> f7b363151f8ea1906cb20a486e05122b4dd55a6c
             </div>
         </div>
     )
