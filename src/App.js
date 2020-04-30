@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import ContainerMeal from './components/ContainerMeal';
 import Recipes from './components/Recipes';
+import Drink from './components/Drink';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
           <Route exact path='/' component={TreapContainer} />
           <Route exact path='/meal/:nameflag' component={ContainerMeal} />
           <Route path='/meal/flag/:idmeal' component={Recipes} />
-
+          <Route path='/:idDrink' component={Drink} />
         </Switch>
       <Footer />
     </>

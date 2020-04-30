@@ -12,8 +12,6 @@ const ContainerMeal = (props) => {
 
     const handleMouseOver = () => setLoad(require("../img/loadhover.png"));
     const handleMouseOut = () => setLoad(require("../img/load.png"));
-
-    console.log(mealRandom,"test");
     
     useEffect(()=> {
         changeMeal();
@@ -36,14 +34,16 @@ const ContainerMeal = (props) => {
 
     return (
         <div className='containermeal'>
-            <div className="ContainerSideBar">
-                <h3>Choose an other destination</h3>
-                <div className="ContainerSidebarImg">
-                    {flags.map((element, index) => 
-                        <div onClick={() => handleClick(element.name)}>
-                            <img key={index} src={element.img} />
-                        </div>
-                    )}
+            <div>
+                <div className="ContainerSideBar">
+                    <h3>Choose an other destination</h3>
+                    <div className="ContainerSidebarImg">
+                        {flags.map((element, index) => 
+                            <div onClick={() => handleClick(element.name)}>
+                                <img key={index} src={element.img} />
+                            </div>
+                        )}
+                    </div>
                 </div>
             </div>
             <div className="ContainerRecipe">

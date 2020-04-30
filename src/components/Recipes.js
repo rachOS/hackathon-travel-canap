@@ -2,6 +2,7 @@ import React , {useState, useEffect}from 'react';
 import axios from 'axios'
 import './recipes.css';
 import load from '../img/load.png';
+import flags from './flags';
 
 
 export default function Recipes(props){
@@ -26,6 +27,10 @@ export default function Recipes(props){
         axios.get('https://www.thecocktaildb.com/api/json/v1/1/random.php')
         .then(res=> setCocktail(res.data.drinks[0]))
     };
+
+    const handleDrink = (idDrink) => {
+        props.history.push(`/${idDrink}`)
+    }
     
     return (
         <div className="recipe">
@@ -44,7 +49,7 @@ export default function Recipes(props){
                 <div className='title-cocktail'>
                     <p>Accompany this delicious dish with</p>
                     <div className='recharge'>
-                        <button className="cocktail-name">{cocktailRandom.strDrink}</button>
+                        <button className="cocktail-name" onClick={() => handleDrink(cocktailRandom.idDrink)}>{cocktailRandom.strDrink}</button>
                         <button onClick={() => changeCocktail()}><img className='load' src={load} alt='recharge' /></button>
                     </div>
                 </div>
