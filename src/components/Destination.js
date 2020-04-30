@@ -1,28 +1,15 @@
 //modules
 import React, { useState } from 'react';
 import flags from './flags';
-import ContainerMeal from './ContainerMeal';
+//import ContainerMeal from './ContainerMeal';
 
 // css
 import './Destination.css';
 
 const Destination = (props) => {
-    const [ countryMeal, setCountryMeal ] = useState('');
 
     const handleClick = (nameflag) => {
-
         props.history.push(`/meal/${nameflag}`)
-        // setCountryMeal(props.mealRandom.strArea === flags.map(element => element.name
-        // ));
-        // console.log(countryMeal);
-        
-
-
-        // return <ContainerMeal
-        //             // mealRandom={props.mealRandom}
-        //             changeMeal={props.changeMeal}
-        //         />
-
     }
 
     return(

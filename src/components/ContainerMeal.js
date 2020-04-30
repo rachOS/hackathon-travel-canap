@@ -3,6 +3,7 @@ import load from '../img/load.png';
 import './ContainerMeal.css';
 import axios from 'axios';
 
+
 const ContainerMeal = (props) => {
 
     const [mealRandom,setMeals] = useState([]);
@@ -17,6 +18,10 @@ const ContainerMeal = (props) => {
          .then(res=> setMeals(res.data.meals[Math.floor(Math.random()* res.data.meals.length)]))
     };
 
+    const handleRecipe = (recipes) => {
+        props.history.push(`/meal/flag/${recipes}`)
+    }
+
     return (
         <div className='containermeal'>
             <div className='title-random'>
@@ -26,7 +31,7 @@ const ContainerMeal = (props) => {
             <div className='meal'>
                 <h4>{mealRandom.strMeal}</h4>
                 <img className='img-meal' src={mealRandom.strMealThumb} alt={mealRandom.strMeal} />
-                <button>Make me love it</button>
+                <button onClick={() =>handleRecipe(mealRandom.idMeal)}>Make me love it</button>
             </div>
         </div>
     )
