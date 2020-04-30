@@ -1,9 +1,114 @@
 .containermeal {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+}
+
+.containermeal::after{
+    content: "";
+    background-image: url("../img/pattern.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.containermeal h1{
+    text-align: center;
+    font-weight: 300;
+    margin: 3px 0;
+}
+
+.ContainerSideBar{
+    border: 1px solid #dfe6e9;
+    margin-left: 35px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: white;
+}
+
+.ContainerSideBar h3{
+    text-align: center;
+    margin: 15px;
+}
+
+.ContainerSidebarImg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ContainerSidebarFlag{
+    margin-right: 30px;
+}
+
+.ContainerSidebarImg img{
+    margin: 10px 0 10px 0;
+    width: 70px;
+    box-shadow: 1px 2px 5px grey;
+    border-radius: 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.ContainerSidebarImg img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+
+.ContainerRecipe{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.ContainerRecipeImg{
+    border: 1px solid #dfe6e9;
+    width: 50vh;
+    height: 57vh;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.ContainerRecipeImg h4{
+    text-align: center;
+    padding: 20px;
+}
+
+.ContainerRecipe button{
+    font-size: 1rem;
+}
+
+.imgReload:hover{
+    transition: 300ms ease all;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -webkit-transition: 300ms ease all;
+    -moz-transition: 300ms ease all;
+    -ms-transition: 300ms ease all;
+    -o-transition: 300ms ease all;
 }
 
 .title-random {
@@ -16,7 +121,7 @@
     border: none;
     background-color: #009432;
     border-radius: 30px;
-    padding:0.5rem;
+    padding: 7px;
     color:#fff;
     display: flex;
     align-items: center;
@@ -27,17 +132,15 @@
 }
 
 .meal button {
-    border: none;
-    background-color: #009432;
-    border-radius: 30px;
-    padding:0.5rem;
-    color:#fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width:12vw;
-    cursor: pointer;
-    margin: 1rem;
+    margin: 2rem;
+}
+
+.title-random button:hover,
+.meal button:hover {
+    background-color: white;
+    border: 1px solid #009432;
+    color: #009432;
+    padding: 6px;
 }
 
 .title-random img {
@@ -53,6 +156,7 @@
 .img-meal {
     width:50vh;
     height: 50vh;
-    margin:1rem;
     object-fit: contain;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
