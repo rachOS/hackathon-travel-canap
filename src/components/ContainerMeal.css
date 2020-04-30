@@ -17,6 +17,7 @@
     right: 0;
     position: absolute;
     z-index: -1;
+    height: 108vh;
 }
 
 .containermeal h1{
@@ -87,6 +88,7 @@
     width: 50vh;
     border-radius: 5px;
     background-color: white;
+    height: 505px;
 }
 
 .ContainerRecipeImg h4{
