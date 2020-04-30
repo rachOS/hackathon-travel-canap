@@ -132,7 +132,9 @@
 }
 
 .meal button {
-    margin: 2rem;
+    margin: 1rem;
+    position: relative;
+    bottom: -45px;
 }
 
 .title-random button:hover,

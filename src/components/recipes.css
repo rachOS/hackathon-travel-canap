@@ -3,7 +3,7 @@
     width:80%;
     margin:2rem auto;
     background:lightgray;
-    height: 71vh;
+    /* height: 100%; */
 }
 
 .recipe:after{
@@ -22,6 +22,7 @@
 
 .recipe-thumb{
     width: 30%;
+    height: 71vh;
     height: auto;
     object-fit: cover;
 }
@@ -32,7 +33,8 @@
     align-content: center;
     flex-direction: column;;
     padding: 1.5rem;
-    width:60%
+    width:60%;
+    font-size: smaller;
 }
 .recipe-ingredient h4 {
     text-transform: uppercase;
@@ -42,22 +44,25 @@
 }
 
 .ingredient-title{
-    font-style: oblique;
     font-size: 1.2em;
+    background:#fff;
+    color:#009432;
+    padding:0.5rem;
+    margin:10px 0px;
 }
 
 
 .instruction{
     font-size: 0.9rem;
+    margin: 0.5rem;
 }
 
 .tips{
     display: flex;
     list-style: none;
     justify-content: space-between;
-    flex-wrap: wrap;
     width:70%;
-    margin: 10px 0px;
+    margin:1rem auto;
 }
 .cocktail {
     background: #009432;
@@ -84,20 +89,19 @@
 
 .title-cocktail .cocktail-name {
     background: #fff;
-    padding: 0.5rem;
+    padding: 10px;
     border-radius:30px;
     color:#009432;
     font-size:0.9rem;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* .cocktail-name:hover::before{
-    content: 'More about';
+.cocktail-name:hover{
+    border: 1px solid white;
+    background-color: #009432;
+    color: white;
+    padding: 9px;
 }
-
-.cocktail-name:hover::after{
-    content: '';
-} */
 
 .title-cocktail button {
     border:none;

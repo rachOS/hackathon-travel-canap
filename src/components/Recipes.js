@@ -3,6 +3,7 @@ import axios from 'axios'
 import './recipes.css';
 import load from '../img/load.png';
 import flags from './flags';
+import arrow from '../img/arrow.png';
 
 
 export default function Recipes(props){
@@ -31,18 +32,25 @@ export default function Recipes(props){
     const handleDrink = (idDrink) => {
         props.history.push(`/${idDrink}`)
     }
+
+    const handlereturn = () => {
+        props.history.goBack()
+    }
     
     return (
         <div className="recipe">
             <img className="recipe-thumb" src={recipe.strMealThumb} alt={recipe.strMeal} />
             <div className="recipe-ingredient">
-                <h4>{recipe.strMeal}</h4>
-                <p className="ingredient-title">Ingredients :</p>
+                <div className='topcocktail'>
+                    <h4>{recipe.strMeal}</h4>
+                    <button onClick={() => handlereturn()}>return<img src={arrow} alt='arrow' /></button>
+                </div>
+                <p className="ingredient-title">Ingredients </p>
                 <div className="tips">
                     <div className="ingredients">{ingredient.slice(9, 29).map(i => i !== "" && <li className="ingredient">{i}</li>)}</div>
                     <div className="ingredients">  {measures.slice(29, 49).map(i => i !== "" && <li className="measure">{i}</li>)}</div>
                 </div>
-
+                <p className="ingredient-title">Recipe</p>
                 <p className="instruction">{recipe.strInstructions}</p>
             </div>
             <div className='cocktail'>
