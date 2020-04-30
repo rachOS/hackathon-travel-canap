@@ -11,9 +11,20 @@
     margin: 60px 0;
 }
 
+.ContainerAllFlags{
+    display: flex;
+    justify-content: center;
+}
+
 .Destination .ContainerImg{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 65%;
+}
+
+.ContainerFlag{
+    margin: 30px 50px 0 0;
 }
 
 .Destination img{

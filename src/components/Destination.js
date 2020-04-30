@@ -15,12 +15,14 @@ const Destination = (props) => {
     return(
         <div className="Destination">
             <h1>Find your treap !</h1>
-                <div className="ContainerImg">
-                    {flags.map((element, index) => 
-                        <div onClick={() => handleClick(element.name)}>
-                            <img key={index} src={element.img} />
-                        </div>
-                    )}
+                <div className="ContainerAllFlags">
+                    <div className="ContainerImg">
+                        {flags.map((element, index) => 
+                            <div onClick={() => handleClick(element.name)} className="ContainerFlag">
+                                <img key={index} src={element.img} />
+                            </div>
+                        )}
+                    </div>
                 </div>
         </div>
     );
