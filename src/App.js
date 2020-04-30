@@ -5,16 +5,17 @@ import TreapContainer from './components/TreapContainer';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ContainerMeal from './components/ContainerMeal';
-import Destination from './components/Destination';
+import Recipes from './components/Recipes';
 
 function App() {
   return (
     <>
       <Header />
         <Switch>
-          {/* <Route path='/destination' component={Destination} /> */}
           <Route exact path='/' component={TreapContainer} />
-          <Route path='/meal/:nameflag' component={ContainerMeal} />
+          <Route exact path='/meal/:nameflag' component={ContainerMeal} />
+          <Route path='/meal/flag/:idmeal' component={Recipes} />
+
         </Switch>
       <Footer />
     </>
