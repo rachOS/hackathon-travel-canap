@@ -101,6 +101,8 @@
     background-color: #009432;
     color: white;
     padding: 9px;
+    -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2))
 }
 
 .title-cocktail button {
@@ -108,6 +110,14 @@
     background:none;
     cursor:pointer;
 }
+
+.title-cocktail button:hover {
+    -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2))
+}
+
+
+
 
 .title-cocktail img {
     width:1.3rem
