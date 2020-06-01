@@ -2,7 +2,6 @@ import React , {useState, useEffect}from 'react';
 import axios from 'axios'
 import './recipes.css';
 import load from '../img/load.png';
-import flags from './flags';
 import arrow from '../img/arrow.png';
 
 
@@ -15,14 +14,14 @@ export default function Recipes(props){
         const idmeal = props.match.params.idmeal;
         axios.get(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${idmeal}`)
         .then(res=> setRecipe(res.data.meals[0]))
-    }, []);
+    }, [props]);
     
     const ingredient = Object.values(recipe);
     const measures = Object.values(recipe);
     
     useEffect(()=> {
         changeCocktail();
-    }, []);
+    }, [props]);
     
     const changeCocktail = () => {
         axios.get('https://www.thecocktaildb.com/api/json/v1/1/random.php')

@@ -1,7 +1,6 @@
 import React , { useState, useEffect } from 'react';
 import axios from 'axios'
 import './drink.css';
-import load from '../img/load.png';
 import arrow from '../img/arrow.png';
 
 export default function Drink(props){
@@ -12,7 +11,7 @@ export default function Drink(props){
         const idDrink = props.match.params.idDrink;
         axios.get(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${idDrink}`)
         .then(res => setDrink(res.data.drinks[0]))
-    }, []);
+    }, [props]);
 
     const ingredientDrink = Object.values(drink);
     const measuresDrink = Object.values(drink);

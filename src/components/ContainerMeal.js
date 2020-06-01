@@ -1,6 +1,4 @@
 import React, {useState, useEffect} from 'react';
-// import load from '../img/load.png';
-// import loadHover from '../img/loadhover.png';
 import './ContainerMeal.css';
 import axios from 'axios';
 import flags from './flags';
@@ -14,7 +12,7 @@ const ContainerMeal = (props) => {
     const handleMouseOut = () => setLoad(require("../img/load.png"));
     
     useEffect(()=> {
-        changeMeal();
+        changeMeal()
     }, [props]);
     
     const changeMeal = () => {
@@ -40,7 +38,7 @@ const ContainerMeal = (props) => {
                     <div className="ContainerSidebarImg">
                         {flags.map((element, index) => 
                             <div onClick={() => handleClick(element.name)}>
-                                <img key={index} src={element.img} />
+                                <img key={index} src={element.img} alt='meal'/>
                             </div>
                         )}
                     </div>

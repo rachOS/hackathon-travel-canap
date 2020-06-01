@@ -1,7 +1,6 @@
 //modules
-import React, { useState } from 'react';
+import React from 'react';
 import flags from './flags';
-//import ContainerMeal from './ContainerMeal';
 
 // css
 import './Destination.css';
@@ -19,7 +18,7 @@ const Destination = (props) => {
                     <div className="ContainerImg">
                         {flags.map((element, index) => 
                             <div onClick={() => handleClick(element.name)} className="ContainerFlag">
-                                <img key={index} src={element.img} />
+                                <img key={index} src={element.img} alt='destination' />
                             </div>
                         )}
                     </div>
