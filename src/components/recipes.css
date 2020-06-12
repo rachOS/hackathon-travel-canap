@@ -1,0 +1,131 @@
+.recipe{
+    display:flex;
+    width:80%;
+    margin:2rem auto;
+    background:lightgray;
+}
+
+.recipe:after{
+    content: "";
+    background-image: url("../img/pattern.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+}
+
+.recipe-thumb{
+    width: 30%;
+    height: 71vh;
+    height: auto;
+    object-fit: cover;
+}
+
+.recipe-ingredient{
+    display: flex;
+    justify-content: right;
+    align-content: center;
+    flex-direction: column;;
+    padding: 1.5rem;
+    width:60%;
+    font-size: smaller;
+}
+.recipe-ingredient h4 {
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    z-index:2;
+    font-size:1.5rem
+}
+
+.ingredient-title{
+    font-size: 1.2em;
+    background:#fff;
+    color:#009432;
+    padding:0.5rem;
+    margin:10px 0px;
+}
+
+
+.instruction{
+    font-size: 0.9rem;
+    margin: 0.5rem;
+}
+
+.tips{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width:70%;
+    margin:1rem auto;
+}
+.cocktail {
+    background: #009432;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height:auto;
+    width:30%;
+    overflow:hidden;
+}
+.title-cocktail {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5rem;
+    color:#fff;
+}
+.cocktail img {
+    height:90%;
+    width:100%;
+    object-fit:cover;
+}
+
+.title-cocktail .cocktail-name {
+    background: #fff;
+    padding: 10px;
+    border-radius:30px;
+    color:#009432;
+    font-size:0.9rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.cocktail-name:hover{
+    border: 1px solid white;
+    background-color: #009432;
+    color: white;
+    padding: 9px;
+    -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2))
+}
+
+.title-cocktail button {
+    border:none;
+    background:none;
+    cursor:pointer;
+}
+
+.title-cocktail button:hover {
+    -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2))
+}
+
+
+
+
+.title-cocktail img {
+    width:1.3rem
+}
+
+.recharge {
+    display:flex;
+    align-items: center;
+    width:100%;
+    justify-content:space-between;
+    margin-top:0.5rem;
+}

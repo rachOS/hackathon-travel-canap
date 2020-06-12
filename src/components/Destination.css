@@ -1,0 +1,65 @@
+.Destination{
+    width: 100%;
+    margin-right: 30px;
+    height: 72vh;
+}
+
+.Destination::after{
+    content: "";
+    background-image: url("../img/pattern.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+}
+
+.Destination h1{
+    text-align: center;
+    font-weight: 300;
+    margin: 60px 0;
+}
+
+.ContainerAllFlags{
+    display: flex;
+    justify-content: center;
+}
+
+.Destination .ContainerImg{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 65%;
+}
+
+.ContainerFlag{
+    margin: 30px 50px 0 0;
+}
+
+.Destination img{
+    width: 130px;
+    border-radius: 15px;
+    transition: all .2s ease-in-out;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: 1px 2px 5px grey;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+
+.Destination img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}

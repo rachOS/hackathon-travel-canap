@@ -1,0 +1,77 @@
+.drink{
+    display:flex;
+    width:80%;
+    height: 100%;
+    margin:2rem auto;
+    background:lightgray;
+}
+
+.drink::after{
+    content: "";
+    background-image: url("../img/pattern.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+    height: 123vh;
+}
+
+.drink-thumb{
+    width: 30%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.drink-ingredient{
+    display: flex;
+    justify-content: right;
+    align-content: center;
+    flex-direction: column;;
+    padding: 1.5rem;
+    width:70%
+}
+
+.drink-ingredient h4 {
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    z-index:2;
+    font-size:1.5rem
+}
+
+
+.instruction{
+    font-size: 0.9rem;
+}
+
+.topcocktail {
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 1rem;
+}
+
+.topcocktail img {
+    width: 1.5rem
+}
+.topcocktail button {
+    height: 2rem;
+    border: none;
+    background: #009432;
+    border-radius: 30px;
+    color: #fff;
+    padding:0.5rem;
+    cursor:pointer;
+    display:flex;
+    width:7rem;
+    justify-content:space-around;
+    
+}
+
+.topcocktail button:hover{
+    -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2))
+}
