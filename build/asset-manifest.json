@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9bf12a49.chunk.css",
+    "main.js": "/static/js/main.7c54bbe9.chunk.js",
+    "main.js.map": "/static/js/main.7c54bbe9.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.50c0ce4f.js",
+    "runtime-main.js.map": "/static/js/runtime-main.50c0ce4f.js.map",
+    "static/js/2.54b880d5.chunk.js": "/static/js/2.54b880d5.chunk.js",
+    "static/js/2.54b880d5.chunk.js.map": "/static/js/2.54b880d5.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.f3e1b963dca40947bc7206d557825b15.js": "/precache-manifest.f3e1b963dca40947bc7206d557825b15.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.9bf12a49.chunk.css.map": "/static/css/main.9bf12a49.chunk.css.map",
+    "static/js/2.54b880d5.chunk.js.LICENSE.txt": "/static/js/2.54b880d5.chunk.js.LICENSE.txt",
+    "static/media/load.png": "/static/media/load.80dfa13d.png",
+    "static/media/drink.css": "/static/media/pattern.a7fa2476.png",
+    "static/media/spain.png": "/static/media/spain.0a7cf1a6.png",
+    "static/media/treap-logo.png": "/static/media/treap-logo.8833f40d.png",
+    "static/media/usa.png": "/static/media/usa.f28bf53b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.50c0ce4f.js",
+    "static/js/2.54b880d5.chunk.js",
+    "static/css/main.9bf12a49.chunk.css",
+    "static/js/main.7c54bbe9.chunk.js"
+  ]
+}
